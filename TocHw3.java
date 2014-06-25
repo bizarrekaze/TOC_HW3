@@ -74,7 +74,7 @@ class Jsonreader
 		in.close();
 	}
 }
-public class Json {
+public class TocHw3 {
   public static void main(String[] args) throws IOException, JSONException, InterruptedException {
 		String str1 = args[1];
 		String str2 = args[2];
