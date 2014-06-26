@@ -1,7 +1,7 @@
 /******************************************************
 	學號:F74002109
 	姓名:蔡翔任
-	HW4
+	HW3
 *******************************************************/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -46,7 +46,7 @@ class Jsonreader
 						if ((s.indexOf(str1) != -1) && (s2.indexOf(str2)!=-1) && (s3.indexOf(str3)!=-1))
 							{
 								str_money =Integer.toString(obj.getInt("總價元"));
-								System.out.println(s +"  "+ s2 +"  "+ s3 +"  "+str_money);
+								//System.out.println(s +"  "+ s2 +"  "+ s3 +"  "+str_money);
 								money += Integer.parseInt(str_money);
 								count++;
 							}
@@ -76,6 +76,11 @@ class Jsonreader
 }
 public class TocHw3 {
   public static void main(String[] args) throws IOException, JSONException, InterruptedException {
+  		if(args.length != 4)
+		{
+			System.out.println("Error input !");
+			System.exit(1);
+		}
 		String str1 = args[1];
 		String str2 = args[2];
 		String str3 = args[3];
