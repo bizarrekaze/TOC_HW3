@@ -2,6 +2,7 @@
 	學號:F74002109
 	姓名:蔡翔任
 	HW3
+	參數同規定
 *******************************************************/
 import java.io.BufferedReader;
 import java.io.IOException;
